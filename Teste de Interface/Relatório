@@ -1,0 +1,26 @@
+==============================
+RELATÓRIO DO PROGRAMA EM PYTHON
+==============================
+
+✅ RESUMO:
+Programa com interface gráfica que monitora em tempo real o uso da CPU e da memória RAM do sistema. Utiliza a biblioteca `psutil` para obter os dados e `customtkinter` para exibir as informações visualmente.
+
+🧠 VARIÁVEIS USADAS:
+- uso_cpu → percentual de uso da CPU
+- uso_ram → percentual de uso da RAM
+- cpu_label, ram_label → elementos visuais que exibem os dados
+- app → instância principal da interface gráfica
+
+🔧 FUNÇÕES PRINCIPAIS:
+- psutil.cpu_percent() → obtém o uso atual da CPU
+- psutil.virtual_memory().percent → obtém o uso atual da RAM
+- atualizar_dados() → atualiza os valores na interface a cada 800ms
+- CTkLabel() → cria rótulos personalizados na interface
+- app.mainloop() → mantém a interface ativa
+
+⚠️ OBSERVAÇÕES:
+- A interface é fixa em 640x480 pixels e não pode ser redimensionada.
+- O monitoramento é contínuo e automático após a inicialização.
+- O texto inicial dos rótulos é "Teste", mas é substituído dinamicamente pelos valores reais.
+
+==============================
