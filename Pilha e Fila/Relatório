@@ -1,0 +1,25 @@
+==============================
+RELATÓRIO DO PROGRAMA EM PYTHON
+==============================
+
+✅ RESUMO:
+Programa que simula operações de estrutura de dados com listas, realizando inserções e remoções para representar o comportamento de uma fila e de uma pilha.
+
+🧠 VARIÁVEIS USADAS:
+- lista → lista principal que armazena os números
+- numero → controle de inserção e remoção
+- subtração → controle do valor a ser removido
+
+🔧 FUNÇÕES PRINCIPAIS:
+- append() → adiciona elementos à lista
+- remove() → remove elementos específicos da lista
+- print() → exibe o conteúdo da lista após cada operação
+- while → controla os ciclos de inserção e remoção
+
+⚠️ OBSERVAÇÕES:
+- A primeira parte insere números de 1 a 100 e remove de forma crescente (simulando fila).
+- A segunda parte insere novamente de 1 a 100 e remove de forma decrescente (simulando pilha).
+- O uso de `remove()` pode gerar erro se o valor não estiver presente na lista.
+- O programa imprime a lista a cada passo, o que pode gerar saída extensa.
+
+==============================
