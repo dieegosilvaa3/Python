@@ -1,0 +1,28 @@
+==============================
+RELATÓRIO DO PROGRAMA EM PYTHON
+==============================
+
+✅ RESUMO:
+Programa com interface gráfica que monitora o uso da CPU e RAM enquanto executa algoritmos de ordenação (Bubble Sort, Selection Sort, Insertion Sort e Quick Sort). O usuário escolhe o algoritmo e define o tamanho do vetor. O tempo de execução e o uso máximo de recursos são exibidos na tela.
+
+🧠 VARIÁVEIS USADAS:
+- algoritmo_atual → controla qual algoritmo será executado
+- vetor, vetor2, vetor3, vetor4 → listas com os dados a serem ordenados
+- inicio, fim → marcam o tempo de início e fim da execução
+- tempo1, tempo2, tempo3 → armazenam o tempo de execução de cada algoritmo
+- max_cpu, max_ram → registram o uso máximo de CPU e RAM durante a execução
+
+🔧 FUNÇÕES PRINCIPAIS:
+- bubble_sort(), selection_sort(), insertion_sort(), quick_sort() → algoritmos de ordenação
+- time.time() → mede o tempo de execução
+- psutil.cpu_percent(), psutil.virtual_memory().percent → monitoram uso de CPU e RAM
+- configure() → atualiza os valores exibidos na interface
+- app.mainloop() → mantém a interface gráfica ativa
+
+⚠️ OBSERVAÇÕES:
+- Cada algoritmo é executado com uma cópia independente do vetor original.
+- O uso de `vetor = 0` após a execução não é necessário e pode ser substituído por `del vetor` ou ignorado.
+- O monitoramento de recursos é feito em paralelo usando `threading`.
+- A interface exibe os tempos e os recursos usados por cada algoritmo de forma separada.
+
+==============================
