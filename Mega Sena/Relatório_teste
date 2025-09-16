@@ -27,6 +27,5 @@ Simulador de sorteio estilo Mega-Sena. O programa gera um conjunto de números p
 - O programa identifica se alguma jogada acertou todos os números premiados.
 - Exibe os números mais frequentes nas jogadas.
 - A verificação de ganhador ocorre dentro do loop de preenchimento.
-- O nome "Joagada" está com erro de digitação. O correto seria "Jogada".
 
 ==============================
