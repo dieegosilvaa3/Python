@@ -1,0 +1,36 @@
+import psutil
+import customtkinter as ct
+
+ct.set_appearance_mode("black")  # definir aparência da interface
+ct.set_default_color_theme("dark-blue")  # definir cor da interface
+app = ct.CTk()
+app.geometry("640x480")  # definir a dimensão da interface
+app.title("System Monitorator")  # definir título da interface
+app.resizable(False, False)  # impedir redimensionamento
+
+# Título
+label_titulo = ct.CTkLabel(app, text="Monitor de Sistemas", font=("Arial", 45), text_color="#14747F")
+label_titulo.place(x=100, y=25)
+
+# CPU
+cpu_title_label = ct.CTkLabel(app, text="Uso de CPU", font=("Arial", 30), text_color="#FA5125")
+cpu_title_label.place(x=35, y=125)
+cpu_label = ct.CTkLabel(app, text="Teste", font=("Arial", 30))
+cpu_label.place(x=450, y=125)
+
+# RAM
+ram_title_label = ct.CTkLabel(app, text="Uso da RAM", font=("Arial", 30), text_color="#34A96C")
+ram_title_label.place(x=35, y=200)
+ram_label = ct.CTkLabel(app, text="Teste", font=("Arial", 30))
+ram_label.place(x=450, y=200)
+
+def atualizar_dados():
+    uso_cpu = psutil.cpu_percent(interval = 1)   # Obter uso da CPU
+    uso_ram = psutil.virtual_memory().percent    # Obter uso da RAM
+    cpu_label.configure(text = f"{uso_cpu}%")   # Atualizar labels
+    ram_label.configure(text = f"{uso_ram}%")   # Atualizar labels
+    app.after(800, atualizar_dados)
+atualizar_dados()
+
+if __name__ == "__main__":
+    app.mainloop()
