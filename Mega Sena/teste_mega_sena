@@ -38,4 +38,4 @@ for numero, contagem in sorted(contador_total.items(), key=lambda item: item[1],
     if contagem > 1:
         print(f"Número {numero}: {contagem} vez(es)")
 print("=====NÚMEROS PREMIADOS===== ", vetor_premiado)
-print(f"Joagada número {num}:", ganhador)
+print(f"Jogada número {num}:", ganhador)
