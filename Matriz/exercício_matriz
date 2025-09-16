@@ -1,0 +1,13 @@
+turma = [
+    [2, 10, 8.5, 4, 5],
+    [8, 5, 7, 7.5, 9]
+]
+media = 0
+
+for contador in range(2):
+    for contador_2 in range(5):
+        media = media + turma[contador] [contador_2]
+        if turma[contador] [contador_2] % 2 == 0:
+            print("O número é par.", turma[contador] [contador_2])
+media = media / 10
+print("Média da sala", media)
