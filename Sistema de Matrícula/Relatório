@@ -1,0 +1,40 @@
+==============================
+RELATÓRIO DO PROGRAMA EM PYTHON
+==============================
+
+✅ RESUMO:
+Sistema de cadastro e consulta de alunos com validação de dados pessoais, geração de matrícula e associação a disciplinas. Utiliza funções para garantir a integridade das informações e apresenta um menu interativo para o usuário.
+
+🧠 FUNCIONALIDADES:
+- Cadastro completo de aluno com:
+  - Nome completo
+  - Data de nascimento
+  - CPF
+  - Telefone com DDD
+  - E-mail
+  - Nome da mãe
+  - Endereço completo (rua, número, bairro, cidade, estado, CEP)
+  - Disciplina (ADM, ADS, MKT)
+- Geração automática de número de matrícula
+- Consulta de aluno por matrícula
+- Validação de dados com tratamento de erros
+
+🔧 FUNÇÕES PRINCIPAIS:
+- `nome_completo()` → valida nome sem números ou símbolos
+- `data_nascimento()` → valida formato de data
+- `numero_cpf()` → valida CPF com 11 dígitos
+- `numero_telefone()` → valida telefone com 11 dígitos
+- `email_1()` → valida presença de "@" e "."
+- `mae_1()` → valida nome da mãe
+- `endereço_completo()` → coleta e valida dados de endereço
+- `mostrar_endereço()` → exibe endereço formatado
+- `gerar_matricula()` → gera número aleatório entre 10000 e 99999
+- `consultar_aluno()` → busca aluno por matrícula e exibe dados
+
+⚠️ OBSERVAÇÕES:
+- A função `gerar_matricula()` depende da variável `nascimento`, que pode gerar erro se não estiver no escopo global.
+- A função `mostrar_endereço()` é chamada dentro de `consultar_aluno()`, mas usa a variável `endereço` fora do escopo, o que pode causar erro.
+- O programa não salva os dados em arquivo, apenas em memória (lista `alunos`).
+- O menu principal permite cadastrar, consultar ou sair do sistema.
+
+==============================
