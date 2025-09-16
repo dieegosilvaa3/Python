@@ -1,0 +1,34 @@
+==============================
+RELATÓRIO DO PROGRAMA EM PYTHON
+==============================
+
+✅ RESUMO:
+Simulador de sorteio estilo Mega-Sena. O programa gera números premiados e realiza múltiplas jogadas aleatórias, verificando se houve acerto total (Sena), parcial (Quina ou Quadra) e contabilizando a frequência de cada número sorteado.
+
+🧠 VARIÁVEIS USADAS:
+- limite → quantidade de números por jogada
+- jogos → número total de jogadas
+- vetor_premiado → lista com os 6 números sorteados como prêmio
+- vetor_1 → lista com os números de cada jogada
+- contador_total → dicionário que conta quantas vezes cada número apareceu
+- ganhador → lista que armazena o jogo vencedor (se houver)
+- num → número da jogada vencedora
+- sena → quantidade de números por jogo (fixo em 6)
+- quantidade_quina → total de jogadas com 5 acertos
+- quantidade_quadra → total de jogadas com 4 acertos
+
+🔧 FUNÇÕES PRINCIPAIS:
+- random.randint() → gera números aleatórios entre 1 e 60
+- input() → recebe dados do usuário
+- sort() → ordena os números em cada vetor
+- set() → compara os números sorteados com os jogados
+- print() → exibe os resultados e estatísticas
+- for e while → controlam os ciclos de sorteio e contagem
+
+⚠️ OBSERVAÇÕES:
+- O programa identifica jogadas com 6, 5 ou 4 acertos.
+- Exibe os números mais frequentes nas jogadas.
+- A verificação de coincidências usa interseção entre conjuntos.
+- Os resultados são exibidos ao final, incluindo estatísticas de acertos.
+
+==============================
