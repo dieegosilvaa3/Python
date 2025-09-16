@@ -1,0 +1,23 @@
+==============================
+RELATÓRIO DO PROGRAMA EM PYTHON
+==============================
+
+✅ RESUMO:
+Programa que percorre uma matriz com notas de alunos, identifica quais valores são pares e calcula a média geral da turma.
+
+🧠 VARIÁVEIS USADAS:
+- turma → matriz 2x5 contendo notas dos alunos
+- media → acumulador para somar todas as notas
+- contador, contador_2 → índices para percorrer linhas e colunas da matriz
+
+🔧 FUNÇÕES PRINCIPAIS:
+- for → laços de repetição para percorrer a matriz
+- if → verifica se o número é par usando o operador módulo
+- print() → exibe os números pares e a média final
+
+⚠️ OBSERVAÇÕES:
+- O cálculo da média considera 10 elementos fixos (2 linhas × 5 colunas).
+- O operador `%` funciona corretamente com inteiros, mas pode gerar erro com valores decimais como 8.5 ou 7.5.
+- Para evitar erro, recomenda-se verificar se o valor é inteiro antes de aplicar `% 2`.
+
+==============================
