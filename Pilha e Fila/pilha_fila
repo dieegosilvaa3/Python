@@ -1,0 +1,25 @@
+lista = []
+
+subtração = 1
+numero = 1
+while numero <= 100:
+    lista.append(numero)
+    print(lista)
+    numero += 1
+while numero != 1:
+    lista.remove(subtração)
+    print(lista)
+    subtração += 1
+    numero -= 1
+#fila
+subtração = 100
+while numero <= 100:
+    lista.append(numero)
+    print(lista)
+    numero += 1
+while numero != 1:
+    lista.remove(subtração)
+    print(lista)
+    subtração -= 1
+    numero -= 1
+#pilha
