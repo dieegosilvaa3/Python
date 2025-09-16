@@ -1,0 +1,29 @@
+import random
+import time
+def bubble_sort(array):
+    numero = len(array)
+    for contador_1 in range(numero):
+        for contador_2 in range(0, numero - contador_1 - 1):
+            if array[contador_2] > array[contador_2 + 1]:
+                array[contador_2], array[contador_2 + 1] = array[contador_2 + 1], array[contador_2]
+#bubble_sort
+inicio = time.time()
+array = random.sample(range(4000), 4000)
+bubble_sort(array)
+fim = time.time()
+total = fim - inicio
+for contador_1 in range(len(array)):
+    print("%d" % array[contador_1], end=" ")
+
+#sort
+inicio = time.time()
+array = random.sample(range(4000), 4000)
+array.sort()
+fim = time.time()
+total2 = fim - inicio
+for contador_1 in range(len(array)):
+    print("%d" % array[contador_1], end=" ")
+#Resultado
+
+print(f"\nTempo de execução (bubble_sort): {total}")
+print(f"\nTempo de execução (sort): {total2}")
