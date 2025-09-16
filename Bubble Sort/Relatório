@@ -1,0 +1,27 @@
+==============================
+RELATÓRIO DO PROGRAMA EM PYTHON
+==============================
+
+✅ RESUMO:
+Programa que compara o tempo de execução entre o algoritmo de ordenação Bubble Sort e o método nativo `.sort()` do Python. Ambos são aplicados a listas com 4000 números aleatórios.
+
+🧠 VARIÁVEIS USADAS:
+- array → lista de números inteiros gerados aleatoriamente
+- numero → tamanho da lista
+- contador_1, contador_2 → índices de controle dos loops
+- inicio, fim → marcação de tempo para medir desempenho
+- total, total2 → tempo de execução dos algoritmos
+
+🔧 FUNÇÕES PRINCIPAIS:
+- random.sample() → gera lista de números aleatórios sem repetição
+- time.time() → captura o tempo atual para medir duração
+- bubble_sort() → função personalizada que implementa o algoritmo Bubble Sort
+- array.sort() → método interno do Python para ordenação eficiente
+- print() → exibe os elementos da lista e os tempos de execução
+
+⚠️ OBSERVAÇÕES:
+- O Bubble Sort é significativamente mais lento que `.sort()` para listas grandes.
+- O programa imprime todos os elementos das listas, o que pode afetar o tempo total medido.
+- Para testes mais precisos, recomenda-se desativar a impressão dos elementos.
+
+==============================
